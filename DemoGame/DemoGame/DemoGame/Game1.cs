@@ -19,6 +19,7 @@ namespace DemoGame
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         MouseState mouseStateCurrent;//, mouseStatePrevious;
+        KeyboardState keyboardStateCurrent;
         // Sprites
         Sprite player;
         List<Sprite> dollars = new List<Sprite>();
@@ -100,6 +101,7 @@ namespace DemoGame
 
             //*****************************************************************************
             mouseStateCurrent = Mouse.GetState();
+            keyboardStateCurrent = Keyboard.GetState();
 
             if (mouseStateCurrent.LeftButton == ButtonState.Pressed)
             {
@@ -108,6 +110,23 @@ namespace DemoGame
             }
 
             player.GoToTarget(new Vector2(target.X,target.Y));
+
+            if (keyboardStateCurrent.IsKeyDown(Keys.Left))
+            {
+                target.X -= 2;
+            }
+            if (keyboardStateCurrent.IsKeyDown(Keys.Right))
+            {
+                target.X += 2;
+            }
+            if (keyboardStateCurrent.IsKeyDown(Keys.Down))
+            {
+                target.Y += 2;
+            }
+            if (keyboardStateCurrent.IsKeyDown(Keys.Up))
+            {
+                target.Y -= 2;
+            }
 
             player.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
             //*****************************************************************************

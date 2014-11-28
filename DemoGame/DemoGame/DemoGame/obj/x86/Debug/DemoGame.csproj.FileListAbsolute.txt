@@ -8,3 +8,13 @@ C:\Users\ALLFAMILY\Documents\Visual Studio 2010\Projects\DemoGame\DemoGame\DemoG
 C:\Users\ALLFAMILY\Documents\Visual Studio 2010\Projects\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\dollar.xnb
 C:\Users\ALLFAMILY\Documents\Visual Studio 2010\Projects\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Score.xnb
 C:\Users\ALLFAMILY\Documents\Visual Studio 2010\Projects\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\monkeywalk.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\monkey.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\dollar.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\monkeywalk.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Score.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\DemoGame.exe
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\DemoGame.pdb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\obj\x86\Debug\DemoGame.csprojResolveAssemblyReference.cache
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\obj\x86\Debug\DemoGame.exe
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\obj\x86\Debug\DemoGame.pdb

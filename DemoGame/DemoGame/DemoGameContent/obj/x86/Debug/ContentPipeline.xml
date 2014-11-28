@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ALLFAMILY\Documents\Visual Studio 2010\Projects\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\monkey.xnb</Output>
-      <Time>2014-11-09T20:23:58.5306856+02:00</Time>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\monkey.xnb</Output>
+      <Time>2014-11-27T23:50:44.692668+02:00</Time>
     </Item>
     <Item>
       <Source>dollar.jpg</Source>
@@ -16,17 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ALLFAMILY\Documents\Visual Studio 2010\Projects\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\dollar.xnb</Output>
-      <Time>2014-11-19T10:46:09.0075715+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Score.spritefont</Source>
-      <Name>Score</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\ALLFAMILY\Documents\Visual Studio 2010\Projects\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Score.xnb</Output>
-      <Time>2014-11-19T10:32:07.9334649+02:00</Time>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\dollar.xnb</Output>
+      <Time>2014-11-27T23:50:44.6766671+02:00</Time>
     </Item>
     <Item>
       <Source>monkeywalk.png</Source>
@@ -34,8 +25,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\ALLFAMILY\Documents\Visual Studio 2010\Projects\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\monkeywalk.xnb</Output>
-      <Time>2014-11-10T18:13:26.4662301+02:00</Time>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\monkeywalk.xnb</Output>
+      <Time>2014-11-27T23:50:44.7216697+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Score.spritefont</Source>
+      <Name>Score</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Score.xnb</Output>
+      <Time>2014-11-27T23:50:44.6406651+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -43,10 +43,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\ALLFAMILY\Documents\Visual Studio 2010\Projects\DemoGame\DemoGame\DemoGameContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\ALLFAMILY\Documents\Visual Studio 2010\Projects\DemoGame\DemoGame\DemoGame\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\ALLFAMILY\Documents\Visual Studio 2010\Projects\DemoGame\DemoGame\DemoGameContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\ALLFAMILY\Documents\Visual Studio 2010\Projects\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGameContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGameContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -75,7 +75,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-11-09T19:45:28.2195434+02:00</Value>
+        <Value>2014-11-05T23:35:42.7946232+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
