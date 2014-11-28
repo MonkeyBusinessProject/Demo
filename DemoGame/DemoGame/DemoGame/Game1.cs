@@ -70,7 +70,8 @@ namespace DemoGame
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            player = new Sprite(Content.Load<Texture2D>("monkeywalk"), new Vector2(0, 0));
+            Random rnd = new Random();
+            player = new Sprite(Content.Load<Texture2D>("monkeywalk"), new Vector2((rnd.Next(0, 800)),rnd.Next(0,600)));
             player.AnimateSprite(1, 5);
 
             hideDollars(5, dollars, player.Width, GraphicsDevice.Viewport.Bounds.Width, player.Height, GraphicsDevice.Viewport.Bounds.Height);
@@ -100,33 +101,7 @@ namespace DemoGame
                 this.Exit();
 
             //*****************************************************************************
-            mouseStateCurrent = Mouse.GetState();
-            keyboardStateCurrent = Keyboard.GetState();
-
-            if (mouseStateCurrent.LeftButton == ButtonState.Pressed)
-            {
-                target.X = mouseStateCurrent.X;
-                target.Y = mouseStateCurrent.Y;
-            }
-
-            player.GoToTarget(new Vector2(target.X,target.Y));
-
-            if (keyboardStateCurrent.IsKeyDown(Keys.Left))
-            {
-                target.X -= 2;
-            }
-            if (keyboardStateCurrent.IsKeyDown(Keys.Right))
-            {
-                target.X += 2;
-            }
-            if (keyboardStateCurrent.IsKeyDown(Keys.Down))
-            {
-                target.Y += 2;
-            }
-            if (keyboardStateCurrent.IsKeyDown(Keys.Up))
-            {
-                target.Y -= 2;
-            }
+            HandleInput();
 
             player.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
             //*****************************************************************************
@@ -156,7 +131,44 @@ namespace DemoGame
 
             base.Update(gameTime);
         }
+        private void HandleInput()
+        {
+            mouseStateCurrent = Mouse.GetState();
+            keyboardStateCurrent = Keyboard.GetState();
 
+            if (mouseStateCurrent.LeftButton == ButtonState.Pressed)
+            {
+                target.X = mouseStateCurrent.X;
+                target.Y = mouseStateCurrent.Y;
+            }
+
+            player.GoToTarget(new Vector2(target.X, target.Y));
+
+            if (keyboardStateCurrent.IsKeyDown(Keys.Left))
+            {
+                target.X -= 2;
+            }
+            if (keyboardStateCurrent.IsKeyDown(Keys.Right))
+            {
+                target.X += 2;
+            }
+            if (keyboardStateCurrent.IsKeyDown(Keys.Down))
+            {
+                target.Y += 2;
+            }
+            if (keyboardStateCurrent.IsKeyDown(Keys.Up))
+            {
+                target.Y -= 2;
+            }
+            if (player.Position.X < 0)
+                player.Position = new Vector2(0, player.Position.Y);
+            if (player.Position.X > 710)
+                player.Position = new Vector2(710, player.Position.Y);
+            if (player.Position.Y < 0)
+                player.Position = new Vector2(player.Position.X, 0);
+            if (player.Position.Y > 410)
+                player.Position = new Vector2(player.Position.X, 410);
+        }
         /// <summary>
         /// This is called when the game should draw itself.
         /// </summary>
