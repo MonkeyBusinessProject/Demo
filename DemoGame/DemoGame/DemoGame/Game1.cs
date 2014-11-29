@@ -179,13 +179,14 @@ namespace DemoGame
 
             // TODO: Add your drawing code here
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            
+            SpriteFont scoreFont = Content.Load<SpriteFont>("Score"); ;
+            spriteBatch.DrawString(scoreFont, Globals.Score.ToString(), new Vector2(10, 10), Color.White);
+
             player.Draw(spriteBatch);
             foreach(Sprite dollar in dollars){
                 dollar.Draw(spriteBatch);
             }
-            SpriteFont scoreFont = Content.Load<SpriteFont>("Score"); ;
-            spriteBatch.DrawString(scoreFont, Globals.Score.ToString(), new Vector2(10, 10), Color.White);
+           
 
             spriteBatch.End();
             base.Draw(gameTime);
