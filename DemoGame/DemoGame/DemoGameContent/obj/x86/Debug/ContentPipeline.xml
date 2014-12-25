@@ -2,33 +2,6 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>monkey.jpg</Source>
-      <Name>monkey</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\monkey.xnb</Output>
-      <Time>2014-11-27T23:50:44.692668+02:00</Time>
-    </Item>
-    <Item>
-      <Source>dollar.jpg</Source>
-      <Name>dollar</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\dollar.xnb</Output>
-      <Time>2014-11-27T23:50:44.6766671+02:00</Time>
-    </Item>
-    <Item>
-      <Source>monkeywalk.png</Source>
-      <Name>monkeywalk</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\monkeywalk.xnb</Output>
-      <Time>2014-11-27T23:50:44.7216697+02:00</Time>
-    </Item>
-    <Item>
       <Source>Score.spritefont</Source>
       <Name>Score</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -36,6 +9,33 @@
       <Options>None</Options>
       <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Score.xnb</Output>
       <Time>2014-11-27T23:50:44.6406651+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Game1 assets\monkey.jpg</Source>
+      <Name>Game1 assets\monkey</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game1 assets\monkey.xnb</Output>
+      <Time>2014-11-27T23:50:44.692668+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Game1 assets\dollar.jpg</Source>
+      <Name>Game1 assets\dollar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game1 assets\dollar.xnb</Output>
+      <Time>2014-11-27T23:50:44.6766671+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Game1 assets\monkeywalk.png</Source>
+      <Name>Game1 assets\monkeywalk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game1 assets\monkeywalk.xnb</Output>
+      <Time>2014-11-27T23:50:44.7216697+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

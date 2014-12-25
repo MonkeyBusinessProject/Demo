@@ -42,14 +42,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="monkey.jpg">
+    <Compile Include="Game1 assets\monkey.jpg">
       <Name>monkey</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dollar.jpg">
+    <Compile Include="Game1 assets\dollar.jpg">
       <Name>dollar</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -63,7 +63,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="monkeywalk.png">
+    <Compile Include="Game1 assets\monkeywalk.png">
       <Name>monkeywalk</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>

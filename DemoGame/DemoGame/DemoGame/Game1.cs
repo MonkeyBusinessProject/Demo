@@ -33,7 +33,7 @@ namespace DemoGame
             Random rnd = new Random();
             for (int i = 0; i < number; i++)
             {
-                dollars.Add(new Sprite(Content.Load<Texture2D>("dollar"), new Vector2(rnd.Next((int)(minX), (int)(maxX)), rnd.Next((int)(minY), (int)(maxY)))));
+                dollars.Add(new Sprite(Content.Load<Texture2D>("Game1 assets/dollar"), new Vector2(rnd.Next((int)(minX), (int)(maxX)), rnd.Next((int)(minY), (int)(maxY)))));
             }
             return dollars;
         }
@@ -71,7 +71,7 @@ namespace DemoGame
 
             // TODO: use this.Content to load your game content here
             Random rnd = new Random();
-            player = new Sprite(Content.Load<Texture2D>("monkeywalk"), new Vector2((rnd.Next(0, 800)),rnd.Next(0,600)));
+            player = new Sprite(Content.Load<Texture2D>("Game1 assets/monkeywalk"), new Vector2((rnd.Next(0, 800)),rnd.Next(0,600)));
             player.AnimateSprite(1, 5);
 
             hideDollars(5, dollars, player.Width, GraphicsDevice.Viewport.Bounds.Width, player.Height, GraphicsDevice.Viewport.Bounds.Height);
