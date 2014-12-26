@@ -11,15 +11,6 @@
       <Time>2014-11-27T23:50:44.6406651+02:00</Time>
     </Item>
     <Item>
-      <Source>Game1 assets\monkey.jpg</Source>
-      <Name>Game1 assets\monkey</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game1 assets\monkey.xnb</Output>
-      <Time>2014-11-27T23:50:44.692668+02:00</Time>
-    </Item>
-    <Item>
       <Source>Game1 assets\dollar.jpg</Source>
       <Name>Game1 assets\dollar</Name>
       <Importer>TextureImporter</Importer>
@@ -36,6 +27,96 @@
       <Options>None</Options>
       <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game1 assets\monkeywalk.xnb</Output>
       <Time>2014-11-27T23:50:44.7216697+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Game2 assets\walking\walk down.png</Source>
+      <Name>Game2 assets\walking\walk down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk down.xnb</Output>
+      <Time>2014-12-25T15:36:11.9213787+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Game2 assets\walking\walk left.png</Source>
+      <Name>Game2 assets\walking\walk left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk left.xnb</Output>
+      <Time>2014-12-25T15:36:11.9213787+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Game2 assets\walking\walk right.png</Source>
+      <Name>Game2 assets\walking\walk right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk right.xnb</Output>
+      <Time>2014-12-25T15:36:11.9223787+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Game2 assets\walking\walk up.png</Source>
+      <Name>Game2 assets\walking\walk up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk up.xnb</Output>
+      <Time>2014-12-25T15:36:11.9233788+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Game2 assets\trashcan.png</Source>
+      <Name>Game2 assets\trashcan</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\trashcan.xnb</Output>
+      <Time>2014-12-25T15:36:21.4329227+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Game2 assets\trashdemo.png</Source>
+      <Name>Game2 assets\trashdemo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\trashdemo.xnb</Output>
+      <Time>2014-12-25T15:36:21.4309226+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Game2 assets\idle\idle down.png</Source>
+      <Name>Game2 assets\idle\idle down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle down.xnb</Output>
+      <Time>2014-12-25T15:46:22.4412984+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Game2 assets\idle\idle left.png</Source>
+      <Name>Game2 assets\idle\idle left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle left.xnb</Output>
+      <Time>2014-12-25T15:46:22.4422985+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Game2 assets\idle\idle right.png</Source>
+      <Name>Game2 assets\idle\idle right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle right.xnb</Output>
+      <Time>2014-12-25T15:46:22.4432985+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Game2 assets\idle\idle up.png</Source>
+      <Name>Game2 assets\idle\idle up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle up.xnb</Output>
+      <Time>2014-12-25T15:46:22.4402984+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

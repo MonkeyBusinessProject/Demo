@@ -15,6 +15,15 @@ C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\obj\x86\De
 C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\obj\x86\Debug\DemoGame.exe
 C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\obj\x86\Debug\DemoGame.pdb
-C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game1 assets\monkey.xnb
 C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game1 assets\dollar.xnb
 C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game1 assets\monkeywalk.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk down.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk left.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk right.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk up.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\trashcan.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\trashdemo.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle down.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle left.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle right.xnb
+C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle up.xnb

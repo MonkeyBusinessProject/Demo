@@ -20,6 +20,7 @@ namespace DemoGame
         MouseState mouseStateCurrent;//, mouseStatePrevious;
         KeyboardState keyboardStateCurrent;
         // Sprites
+        Sprite player;
         Sprite playeridledown;
         Sprite playeridleup;
         Sprite playeridleleft;
@@ -54,20 +55,25 @@ namespace DemoGame
             // TODO: use this.Content to load your game content here
             Random rnd = new Random();
             //loading idle sprites
-            playeridledown = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle down"), new Vector2((rnd.Next(0, 800)), rnd.Next(0, 600)));
-            playeridleup = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle up"), new Vector2(playeridledown.Position.X, playeridledown.Position.Y));
-            playeridleleft = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle left"), new Vector2(playeridledown.Position.X, playeridledown.Position.Y));
-            playeridleright = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle right"), new Vector2(playeridledown.Position.X, playeridledown.Position.Y));
+            player = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle down"), new Vector2((rnd.Next(0, 800)), rnd.Next(0, 600)));
+            playeridledown = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle down"), new Vector2(player.Position.X, player.Position.Y));
+            playeridleup = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle up"), new Vector2(player.Position.X, player.Position.Y));
+            playeridleleft = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle left"), new Vector2(player.Position.X, player.Position.Y));
+            playeridleright = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle right"), new Vector2(player.Position.X, player.Position.Y));
             //end idle
 
             //loading walking sprites
             playerwalkup = new Sprite(Content.Load<Texture2D>("Game2 assets/walking/walk up"), new Vector2(playeridleup.Position.X, playeridleup.Position.Y));
+            playerwalkup.AnimateSprite(1, 3);
             playerwalkdown = new Sprite(Content.Load<Texture2D>("Game2 assets/walking/walk down"), new Vector2(playeridledown.Position.X, playeridledown.Position.Y));
+            playerwalkdown.AnimateSprite(1, 3);
             playerwalkleft = new Sprite(Content.Load<Texture2D>("Game2 assets/walking/walk left"), new Vector2(playeridleleft.Position.X, playeridleleft.Position.Y));
+            playerwalkleft.AnimateSprite(1, 3);
             playerwalkright = new Sprite(Content.Load<Texture2D>("Game2 assets/walking/walk right"), new Vector2(playeridleright.Position.X, playeridleright.Position.Y));
+            playerwalkright.AnimateSprite(1, 3);
             //end walking
-            trashcan = new Sprite(Content.Load<Texture2D>("trashcan"), new Vector2(400, 300));
-
+            trashcan = new Sprite(Content.Load<Texture2D>("Game2 assets/trashcan"), new Vector2(400, 300));
+            target = new Vector2(player.Position.X + (float)(0.5 * player.Width), player.Position.Y + (float)(0.5 * player.Height));
             
         }
         protected override void UnloadContent()
@@ -82,7 +88,7 @@ namespace DemoGame
 
             //*****************************************************************************
             HandleInput();
-
+            player.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
             playeridledown.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
             playeridleleft.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
             playeridleup.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
@@ -101,24 +107,25 @@ namespace DemoGame
 
              if (keyboardStateCurrent.IsKeyDown(Keys.Left))
              {
-                 playerwalkleft.AnimateSprite(1, 3);
+                 player = playerwalkleft;
                  target.X -= 2;
                  
              }
 
              if (keyboardStateCurrent.IsKeyDown(Keys.Right))
              {
-                 playerwalkright.AnimateSprite(1, 3);
+                 player = playerwalkright;
                  target.X += 2;
              }
              if (keyboardStateCurrent.IsKeyDown(Keys.Down))
              {
-                 playerwalkdown.AnimateSprite(1, 3);
+                 playerwalkdown.AnimateSprite(1, 4);
+                player= playerwalkdown;
                  target.Y += 2;
              }
              if (keyboardStateCurrent.IsKeyDown(Keys.Up))
              {
-                 playerwalkup.AnimateSprite(1, 3);
+               player =   playerwalkup;
                  target.Y -= 2;
              }
              if (player.Position.X < 0)
@@ -130,5 +137,18 @@ namespace DemoGame
              if (player.Position.Y > 410)
                  player.Position = new Vector2(player.Position.X, 410);
          }
+        protected override void Draw(GameTime gameTime)
+        {
+            GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            // TODO: Add your drawing code here
+            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+            SpriteFont scoreFont = Content.Load<SpriteFont>("Score"); ;
+            spriteBatch.DrawString(scoreFont, Globals.Score.ToString(), new Vector2(10, 10), Color.White);
+
+            player.Draw(spriteBatch);
+            spriteBatch.End();
+            base.Draw(gameTime);
+        }
     }
 }
