@@ -2,22 +2,13 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Score.spritefont</Source>
-      <Name>Score</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Score.xnb</Output>
-      <Time>2014-11-27T23:50:44.6406651+02:00</Time>
-    </Item>
-    <Item>
       <Source>Game1 assets\dollar.jpg</Source>
       <Name>Game1 assets\dollar</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game1 assets\dollar.xnb</Output>
-      <Time>2014-11-27T23:50:44.6766671+02:00</Time>
+      <Output>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game1 assets\dollar.xnb</Output>
+      <Time>2014-12-28T22:27:09.2520084+02:00</Time>
     </Item>
     <Item>
       <Source>Game1 assets\monkeywalk.png</Source>
@@ -25,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game1 assets\monkeywalk.xnb</Output>
-      <Time>2014-11-27T23:50:44.7216697+02:00</Time>
+      <Output>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game1 assets\monkeywalk.xnb</Output>
+      <Time>2014-12-28T22:27:09.2520084+02:00</Time>
     </Item>
     <Item>
       <Source>Game2 assets\walking\walk down.png</Source>
@@ -34,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk down.xnb</Output>
-      <Time>2014-12-25T15:36:11.9213787+02:00</Time>
+      <Output>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk down.xnb</Output>
+      <Time>2014-12-28T22:40:06.8954871+02:00</Time>
     </Item>
     <Item>
       <Source>Game2 assets\walking\walk left.png</Source>
@@ -43,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk left.xnb</Output>
-      <Time>2014-12-25T15:36:11.9213787+02:00</Time>
+      <Output>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk left.xnb</Output>
+      <Time>2014-12-28T22:27:09.2580088+02:00</Time>
     </Item>
     <Item>
       <Source>Game2 assets\walking\walk right.png</Source>
@@ -52,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk right.xnb</Output>
-      <Time>2014-12-25T15:36:11.9223787+02:00</Time>
+      <Output>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk right.xnb</Output>
+      <Time>2014-12-28T22:39:45.1692444+02:00</Time>
     </Item>
     <Item>
       <Source>Game2 assets\walking\walk up.png</Source>
@@ -61,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk up.xnb</Output>
-      <Time>2014-12-25T15:36:11.9233788+02:00</Time>
+      <Output>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\walking\walk up.xnb</Output>
+      <Time>2014-12-28T22:38:34.0591772+02:00</Time>
     </Item>
     <Item>
       <Source>Game2 assets\trashcan.png</Source>
@@ -70,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\trashcan.xnb</Output>
-      <Time>2014-12-25T15:36:21.4329227+02:00</Time>
+      <Output>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\trashcan.xnb</Output>
+      <Time>2014-12-28T22:52:03.8704957+02:00</Time>
     </Item>
     <Item>
       <Source>Game2 assets\trashdemo.png</Source>
@@ -79,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\trashdemo.xnb</Output>
-      <Time>2014-12-25T15:36:21.4309226+02:00</Time>
+      <Output>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\trashdemo.xnb</Output>
+      <Time>2014-12-28T22:52:23.0615934+02:00</Time>
     </Item>
     <Item>
       <Source>Game2 assets\idle\idle down.png</Source>
@@ -88,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle down.xnb</Output>
-      <Time>2014-12-25T15:46:22.4412984+02:00</Time>
+      <Output>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle down.xnb</Output>
+      <Time>2014-12-28T22:49:59.7013937+02:00</Time>
     </Item>
     <Item>
       <Source>Game2 assets\idle\idle left.png</Source>
@@ -97,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle left.xnb</Output>
-      <Time>2014-12-25T15:46:22.4422985+02:00</Time>
+      <Output>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle left.xnb</Output>
+      <Time>2014-12-28T22:50:17.4584093+02:00</Time>
     </Item>
     <Item>
       <Source>Game2 assets\idle\idle right.png</Source>
@@ -106,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle right.xnb</Output>
-      <Time>2014-12-25T15:46:22.4432985+02:00</Time>
+      <Output>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle right.xnb</Output>
+      <Time>2014-12-28T22:50:35.4024356+02:00</Time>
     </Item>
     <Item>
       <Source>Game2 assets\idle\idle up.png</Source>
@@ -115,8 +106,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle up.xnb</Output>
-      <Time>2014-12-25T15:46:22.4402984+02:00</Time>
+      <Output>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Game2 assets\idle\idle up.xnb</Output>
+      <Time>2014-12-28T22:51:00.5078716+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Score.spritefont</Source>
+      <Name>Score</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\Score.xnb</Output>
+      <Time>2014-12-28T22:27:09.2600089+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -124,10 +124,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGameContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGameContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\PyroShifter\Documents\GitHub\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGameContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGameContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ALLFAMILY\Documents\Demo\DemoGame\DemoGame\DemoGame\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -156,7 +156,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-11-05T23:35:42.7946232+02:00</Value>
+        <Value>2014-11-09T19:45:28.2195434+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

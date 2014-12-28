@@ -96,6 +96,11 @@ namespace DemoGame
             width = texture.Width / columns;
             height = texture.Height / rows;
         }
+
+        public void LoadAnimation(Texture2D texture)
+        {
+            this.texture = texture;
+        }
         //
 
         // Draw
@@ -107,7 +112,6 @@ namespace DemoGame
         {
             currentRow = (int)((float)currentFrame / (float)columns);
             currentColumn = currentFrame % columns;
-
 
             Rectangle sourceRectangle = new Rectangle(width * currentColumn, height * currentRow, width, height);
             Rectangle destinationRectangle = new Rectangle((int)Position.X, (int)Position.Y, width, height);

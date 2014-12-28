@@ -21,19 +21,13 @@ namespace DemoGame
         KeyboardState keyboardStateCurrent;
         // Sprites
         Sprite player;
-        Sprite playeridledown;
-        Sprite playeridleup;
-        Sprite playeridleleft;
-        Sprite playeridleright;
-        Sprite playerwalkup;
-        Sprite playerwalkdown;
-        Sprite playerwalkleft;
-        Sprite playerwalkright;
         Sprite trashcan;
         Sprite trashdemo;
-        List<Sprite> trash = new List<Sprite>();
+        List<MovableObject> trashes = new List<MovableObject>();
         //end sprites
         Vector2 target;
+
+        Random rnd;
 
         public Game2()
         {
@@ -53,28 +47,24 @@ namespace DemoGame
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            Random rnd = new Random();
+            rnd = new Random();
             //loading idle sprites
             player = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle down"), new Vector2((rnd.Next(0, 800)), rnd.Next(0, 600)));
-            playeridledown = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle down"), new Vector2(player.Position.X, player.Position.Y));
-            playeridleup = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle up"), new Vector2(player.Position.X, player.Position.Y));
-            playeridleleft = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle left"), new Vector2(player.Position.X, player.Position.Y));
-            playeridleright = new Sprite(Content.Load<Texture2D>("Game2 assets/idle/idle right"), new Vector2(player.Position.X, player.Position.Y));
-            //end idle
-
-            //loading walking sprites
-            playerwalkup = new Sprite(Content.Load<Texture2D>("Game2 assets/walking/walk up"), new Vector2(playeridleup.Position.X, playeridleup.Position.Y));
-            playerwalkup.AnimateSprite(1, 3);
-            playerwalkdown = new Sprite(Content.Load<Texture2D>("Game2 assets/walking/walk down"), new Vector2(playeridledown.Position.X, playeridledown.Position.Y));
-            playerwalkdown.AnimateSprite(1, 3);
-            playerwalkleft = new Sprite(Content.Load<Texture2D>("Game2 assets/walking/walk left"), new Vector2(playeridleleft.Position.X, playeridleleft.Position.Y));
-            playerwalkleft.AnimateSprite(1, 3);
-            playerwalkright = new Sprite(Content.Load<Texture2D>("Game2 assets/walking/walk right"), new Vector2(playeridleright.Position.X, playeridleright.Position.Y));
-            playerwalkright.AnimateSprite(1, 3);
-            //end walking
+            
+            //
+            CreateTrash(10, player.Width, GraphicsDevice.Viewport.Bounds.Width, player.Height, GraphicsDevice.Viewport.Bounds.Height);
+            
             trashcan = new Sprite(Content.Load<Texture2D>("Game2 assets/trashcan"), new Vector2(400, 300));
             target = new Vector2(player.Position.X + (float)(0.5 * player.Width), player.Position.Y + (float)(0.5 * player.Height));
             
+        }
+
+        private void CreateTrash(int number, float minX, float maxX, float minY, float maxY)
+        {
+            for (int i = 0; i < number; i++)
+            {
+                trashes.Add(new MovableObject(Content.Load<Texture2D>("Game2 assets/trashdemo"), new Vector2(rnd.Next((int)(minX), (int)(maxX)), rnd.Next((int)(minY), (int)(maxY)))));
+            }
         }
         protected override void UnloadContent()
         {
@@ -89,11 +79,32 @@ namespace DemoGame
             //*****************************************************************************
             HandleInput();
             player.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
-            playeridledown.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
-            playeridleleft.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
-            playeridleup.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
-            playeridleright.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
+            player.GoToTarget(target);
             //*****************************************************************************
+
+            List<Sprite> toRemove = new List<Sprite>();
+            foreach (MovableObject trash in trashes)
+            {
+                if (player.BoundingBox.Intersects(trash.BoundingBox))
+                {
+                    trash.Pushed((float)gameTime.ElapsedGameTime.TotalSeconds, (float)0.5, player.Velocity * 2);
+                }
+
+                if(trashcan.BoundingBox.Intersects(trash.BoundingBox))
+                {
+                    Globals.Score += 100;
+                    toRemove.Add(trash);
+                }
+                trash.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
+
+            }
+            if (toRemove.Count > 0)
+            {
+                foreach (MovableObject trash in toRemove)
+                {
+                    trashes.Remove(trash);
+                }
+            }
 
             //****************************
             base.Update(gameTime);
@@ -107,25 +118,25 @@ namespace DemoGame
 
              if (keyboardStateCurrent.IsKeyDown(Keys.Left))
              {
-                 player = playerwalkleft;
+                 //player.LoadAnimation(Content.Load<Texture2D>("Game2 assets/walking/walk left"));
+                 //player.AnimateSprite(1,3);
                  target.X -= 2;
-                 
              }
 
              if (keyboardStateCurrent.IsKeyDown(Keys.Right))
              {
-                 player = playerwalkright;
+                 //player = playerwalkright;
                  target.X += 2;
              }
              if (keyboardStateCurrent.IsKeyDown(Keys.Down))
              {
-                 playerwalkdown.AnimateSprite(1, 4);
-                player= playerwalkdown;
+                 //playerwalkdown.AnimateSprite(1, 4);
+                //player= playerwalkdown;
                  target.Y += 2;
              }
              if (keyboardStateCurrent.IsKeyDown(Keys.Up))
              {
-               player =   playerwalkup;
+               //player =   playerwalkup;
                  target.Y -= 2;
              }
              if (player.Position.X < 0)
@@ -147,6 +158,12 @@ namespace DemoGame
             spriteBatch.DrawString(scoreFont, Globals.Score.ToString(), new Vector2(10, 10), Color.White);
 
             player.Draw(spriteBatch);
+            trashcan.Draw(spriteBatch);
+            spriteBatch.DrawString(scoreFont, Globals.Score.ToString(), new Vector2(10, 10), Color.White);
+            foreach (MovableObject trash in trashes)
+            {
+                trash.Draw(spriteBatch);
+            }
             spriteBatch.End();
             base.Draw(gameTime);
         }

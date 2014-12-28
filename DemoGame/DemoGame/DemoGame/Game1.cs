@@ -129,7 +129,17 @@ namespace DemoGame
 
             // TODO: Add your update logic here
 
+            CheckWinning();
+
             base.Update(gameTime);
+        }
+
+        private void CheckWinning()
+        {
+            if (Globals.Score == 100)
+            {
+                //TODO: To the next game
+            }
         }
         private void HandleInput()
         {

@@ -10,6 +10,11 @@ namespace DemoGame
         /// </summary>
         static void Main(string[] args)
         {
+            using (Game1 game = new Game1())
+            {
+                game.Run();
+                game.Exit();
+            }
             using (Game2 game = new Game2())
             {
                 game.Run();

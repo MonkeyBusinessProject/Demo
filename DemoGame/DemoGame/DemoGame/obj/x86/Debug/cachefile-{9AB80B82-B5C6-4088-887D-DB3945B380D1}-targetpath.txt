@@ -1,4 +1,3 @@
-Content\Score.xnb
 Content\Game1 assets\dollar.xnb
 Content\Game1 assets\monkeywalk.xnb
 Content\Game2 assets\walking\walk down.xnb
@@ -11,3 +10,4 @@ Content\Game2 assets\idle\idle down.xnb
 Content\Game2 assets\idle\idle left.xnb
 Content\Game2 assets\idle\idle right.xnb
 Content\Game2 assets\idle\idle up.xnb
+Content\Score.xnb
