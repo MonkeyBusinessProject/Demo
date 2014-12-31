@@ -1,3 +1,4 @@
+#region using statements
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
-
+#endregion
 namespace DemoGame
 {
     /// <summary>
@@ -16,6 +17,7 @@ namespace DemoGame
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+        #region fields
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         MouseState mouseStateCurrent;//, mouseStatePrevious;
@@ -26,8 +28,9 @@ namespace DemoGame
         // !Sprites
         Vector2 target;
         //float dx = 0; float dy = 0;
-        
-        // Actions
+        #endregion
+        #region dollar creation
+        // Actions 
         private List<Sprite> hideDollars(int number, List<Sprite> dollars, float minX, float maxX, float minY, float maxY)
         {
             Random rnd = new Random();
@@ -37,7 +40,8 @@ namespace DemoGame
             }
             return dollars;
         }
-        // !Actions
+
+        #endregion
 
         // Main Functions
         public Game1()
@@ -46,20 +50,24 @@ namespace DemoGame
             Content.RootDirectory = "Content";
         }
 
-        /// <summary>
-        /// Allows the game to perform any initialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
-        /// </summary>
+        
         protected override void Initialize()
         {
+            /// <summary>
+            /// Allows the game to perform any initialization it needs to before starting to run.
+            /// This is where it can query for any required services and load any non-graphic
+            /// related content.  Calling base.Initialize will enumerate through any components
+            /// and initialize them as well.
+            /// </summary>
+            
             // TODO: Add your initialization logic here
             this.IsMouseVisible = true;
             base.Initialize();
 
         }
 
+        
+        #region content loading
         /// <summary>
         /// LoadContent will be called once per game and is the place to load
         /// all of your content.
@@ -79,16 +87,19 @@ namespace DemoGame
             target = new Vector2(player.Position.X + (float)(0.5 * player.Width), player.Position.Y + (float)(0.5 * player.Height));
             
         }
+        #endregion
 
-        /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// all content.
-        /// </summary>
+        
         protected override void UnloadContent()
         {
+            /// <summary>
+            /// UnloadContent will be called once per game and is the place to unload
+            /// all content.
+            /// </summary>
             // TODO: Unload any non ContentManager content here
         }
 
+        #region update method
         /// <summary>
         /// Allows the game to run logic such as updating the world,
         /// checking for collisions, gathering input, and playing audio.
@@ -133,7 +144,7 @@ namespace DemoGame
 
             base.Update(gameTime);
         }
-
+        #endregion
         private void CheckWinning()
         {
             if (Globals.Score == 100)
@@ -141,6 +152,7 @@ namespace DemoGame
                 //TODO: To the next game
             }
         }
+        #region handle input method
         private void HandleInput()
         {
             mouseStateCurrent = Mouse.GetState();
@@ -179,12 +191,14 @@ namespace DemoGame
             if (player.Position.Y > 410)
                 player.Position = new Vector2(player.Position.X, 410);
         }
-        /// <summary>
-        /// This is called when the game should draw itself.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
+        #endregion
+        #region draw method
         protected override void Draw(GameTime gameTime)
         {
+            /// <summary>
+            /// This is called when the game should draw itself.
+            /// </summary>
+            /// <param name="gameTime">Provides a snapshot of timing values.</param>
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
@@ -201,5 +215,6 @@ namespace DemoGame
             spriteBatch.End();
             base.Draw(gameTime);
         }
+        #endregion
     }
 }

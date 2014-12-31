@@ -1,4 +1,5 @@
-﻿using System;
+﻿#region using statements
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +10,11 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
-
+#endregion
 namespace DemoGame
 {
     public class Game2 : Microsoft.Xna.Framework.Game
-    
+        #region fields
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
@@ -28,7 +29,7 @@ namespace DemoGame
         Vector2 target;
 
         Random rnd;
-
+    #endregion
         public Game2()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -41,6 +42,7 @@ namespace DemoGame
             base.Initialize();
 
         }
+        #region content loading
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
@@ -58,7 +60,8 @@ namespace DemoGame
             target = new Vector2(player.Position.X + (float)(0.5 * player.Width), player.Position.Y + (float)(0.5 * player.Height));
             
         }
-
+        #endregion
+        #region trash creation
         private void CreateTrash(int number, float minX, float maxX, float minY, float maxY)
         {
             for (int i = 0; i < number; i++)
@@ -66,11 +69,13 @@ namespace DemoGame
                 trashes.Add(new MovableObject(Content.Load<Texture2D>("Game2 assets/trashdemo"), new Vector2(rnd.Next((int)(minX), (int)(maxX)), rnd.Next((int)(minY), (int)(maxY)))));
             }
         }
+        #endregion
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
         }
-         protected override void Update(GameTime gameTime)
+        #region update method
+        protected override void Update(GameTime gameTime)
         {
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
@@ -81,9 +86,10 @@ namespace DemoGame
             player.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
             player.GoToTarget(target);
             //*****************************************************************************
-
+            #region collision management
             List<Sprite> toRemove = new List<Sprite>();
-            foreach (MovableObject trash in trashes)
+            
+             foreach (MovableObject trash in trashes)
             {
                 if (player.BoundingBox.Intersects(trash.BoundingBox))
                 {
@@ -98,7 +104,9 @@ namespace DemoGame
                 trash.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
 
             }
-            if (toRemove.Count > 0)
+            #endregion 
+             #region trash to trashcan
+             if (toRemove.Count > 0)
             {
                 foreach (MovableObject trash in toRemove)
                 {
@@ -106,10 +114,12 @@ namespace DemoGame
                 }
             }
 
-            //****************************
-            base.Update(gameTime);
+             #endregion
+             base.Update(gameTime);
         }
-         private void HandleInput()
+        #endregion
+        #region handle method
+        private void HandleInput()
          {
              mouseStateCurrent = Mouse.GetState();
              keyboardStateCurrent = Keyboard.GetState();
@@ -118,37 +128,37 @@ namespace DemoGame
 
              if (keyboardStateCurrent.IsKeyDown(Keys.Left))
              {
-                 //player.LoadAnimation(Content.Load<Texture2D>("Game2 assets/walking/walk left"));
-                 //player.AnimateSprite(1,3);
+                
                  target.X -= 2;
              }
 
              if (keyboardStateCurrent.IsKeyDown(Keys.Right))
              {
-                 //player = playerwalkright;
+                 
                  target.X += 2;
              }
              if (keyboardStateCurrent.IsKeyDown(Keys.Down))
              {
-                 //playerwalkdown.AnimateSprite(1, 4);
-                //player= playerwalkdown;
+               
                  target.Y += 2;
              }
              if (keyboardStateCurrent.IsKeyDown(Keys.Up))
              {
-               //player =   playerwalkup;
+               
                  target.Y -= 2;
              }
              if (player.Position.X < 0)
                  player.Position = new Vector2(0, player.Position.Y);
-             if (player.Position.X > 710)
-                 player.Position = new Vector2(710, player.Position.Y);
+             if (player.Position.X > 767)
+                 player.Position = new Vector2(767, player.Position.Y);
              if (player.Position.Y < 0)
                  player.Position = new Vector2(player.Position.X, 0);
-             if (player.Position.Y > 410)
-                 player.Position = new Vector2(player.Position.X, 410);
+             if (player.Position.Y > 444)
+                 player.Position = new Vector2(player.Position.X, 444);
+#endregion
          }
-        protected override void Draw(GameTime gameTime)
+        #region draw method
+         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
@@ -167,5 +177,6 @@ namespace DemoGame
             spriteBatch.End();
             base.Draw(gameTime);
         }
+#endregion
     }
 }
